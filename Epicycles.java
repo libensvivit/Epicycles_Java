@@ -48,8 +48,6 @@ public class Epicycles extends PApplet {
 
             beginShape();
             for (int i = 0; i < path.size(); i++) {
-//                scale(0.4f);
-//                translate(path.get(path.size() - 1).x, path.get(path.size() - 1).y);
                 vertex(path.get(i).x, path.get(i).y);
             }
             endShape();
@@ -119,10 +117,6 @@ public class Epicycles extends PApplet {
         }
         epicycles = Discrete_Fourier_Transform.dft(toAnalyze);
         Complex.SortComplex(epicycles);
-    }
-
-    public void mouseWheel(MouseEvent event) {
-        //interval *= event.getCount() < 0 ? -0.1 : 0.1;
     }
 
 
